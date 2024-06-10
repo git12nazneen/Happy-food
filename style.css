@@ -312,6 +312,9 @@ border-radius: 30px;
   } .grid_col_4 {
     grid-column: span 4;
   }
+  .grid_col_3 {
+    grid-column: span 3;
+  }
   .grid_col_12 {
     grid-column: span 12;
     width: 500px;
@@ -662,4 +665,93 @@ padding-top: 100px;
 
 .main-div input[type="email"] {
     margin-right: 10px; /* Adjust as needed */
+}
+
+
+.tour-mainx{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+/* Footer container */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: space-between;
+    padding: 20px;
+    background-color: gainsboro;
+    color: black;
+}
+
+/* Individual footer sections */
+.footer-container > div {
+    flex: 1 1 calc(25% - 20px); /* Adjust as needed for margin */
+    margin-bottom: 20px; /* Add space between rows */
+    max-width: 300px; /* Limit maximum width of sections */
+}
+
+/* Logo and description */
+.footer-logo img {
+    width: 100%; /* Adjust as needed */
+    max-width: 150px; /* Limit maximum width of logo */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Contact info */
+.footer-info p {
+    margin: 5px 0;
+}
+
+/* Quick links */
+
+.footer-additional ul {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-additional ul li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.footer-additional ul li a {
+    color: gray;
+    text-decoration: none;
+}
+
+/* Social media links */
+
+.footer-social ul {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-social ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.footer-social ul li a {
+    color: gray;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Hover effect for social media icons */
+.footer-social ul li a:hover {
+    opacity: 0.7;
+}
+.h4x{
+    padding-bottom: 20px;
+}
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+    .footer-container > div {
+        flex: 1 1 calc(50% - 20px); /* Adjust number of columns */
+        max-width: none; /* Remove maximum width */
+    }
 }
