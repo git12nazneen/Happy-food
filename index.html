@@ -14,51 +14,59 @@
 <body>
     <header>
         <nav>
-            <h3 class="nav-title"> <i class="fa-duotone fa-plane" style="--fa-primary-color: #ff540a; --fa-secondary-color: #fa7b05;"></i> Family <span>Trouble</span></h3>
+            <h3 class="nav-title"> <img src="./Images/Group 40071 (2).png" style="height: 80px; width: 80px;" alt=""> </h3>
             <ul>
                 <li><a href="" class="active">Home</a></li>
-                <li><a href="">Package</a></li>
+                <li><a href="">Cart</a></li>
                 <li><a href="">Testimonial</a></li>
                 <li><a href="">Blog</a></li>
                 <li><a href="">Contact</a></li>
             </ul>
+            <form action="/search" method="GET" class="search-form">
+                <div class="search-container">
+                    <button type="submit"><i class="fa-thin fa-magnifying-glass"></i></button>
+                    <input type="text" name="query" placeholder="Search...">
+                    <button><i class="fa-regular fa-bookmark"></i></button>
+                </div>
+            </form>
             <div class="icon"><i class="fa-solid fa-bars"></i></div>
         </nav>
         <!-- banner -->
-        <section id="banner">
-            <div class="container">
-                <div class="main-banner">
-                    <div class="banner-overlay"><h1 class="travel-head">Explore Your Travel</h1>
-                    <p class="banner-p">Family travel refers to the act of going on trips or vacations with members of one's family.</p>
-                <div class="banner-box">    
-                    <div class="banner-item">
-                        <h6>Where go</h6>
-                    </div>
-                    <div class="banner-item">
-                        <from>
-                            <select name="When">
-                                <option>Morning</option>
-                                <option>Evening</option>
-                                <option>Night</option>
-                                </select>
-                        </from>
-                    </div>
-                    <div class="banner-item">
-                        <!-- <h6 >Select type <i class="fa-light fa-chevron-left fa-rotate-270"></i></h6> -->
-                        <from>
-                            <select name="Select type">
-                                <option>Air</option>
-                                <option>Train</option>
-                                <option>Boat</option>
-                                </select>
-                        </from>
-                    </div>
-                    <div class="banner-item span">
-                        <h6 class="span"> <i class="fa-solid fa-magnifying-glass"></i>  Find now </h6>
-                    </div>
+        <section class="banner">
+            <div class="banner-text">
+                <div class="banner-top flex-container">
+                    <h6 class="x">Delivery Food</h6> 
+                    <h3 class="roundb"><i class="fa-solid fa-person-biking-mountain"></i></h3>
                 </div>
-                <div class="padding"></div>
+                <h2>The Fastest <br>
+                    <span>Delivery</span> <br>
+                    In <span>Your City</span></h2>
+                <!-- <h1>Welcome to Our Restaurant</h1> -->
+                <p>Experience the best dining with us. Enjoy our delicious meals and excellent service.</p>
+                <a href="#" class="btn1">Order Now</a>
+            </div>
+            <!-- <div class="banner-images">
+            
+               
+             
+               
+            </div> -->
+            <div class="banner-images">
+                <div class="image-item">
+                    <img src="./Images/7c550720ab20af0840548a832e0f9a28.png" alt="Delicious food 1">
+                    <p>Delicious Food 1</p>
                 </div>
+                <div class="image-item">
+                    <img src="./Images/2960bf175397022922e830ec3e1d9301.png" alt="Delicious food 2">
+                    <p>Delicious Food 2</p>
+                </div>
+                <div class="image-item">
+                    <img src="./Images/4781e98e8fe30f5e079a9a24ac667e6a.png" alt="Delicious food 3">
+                    <p>Delicious Food 3</p>
+                </div>
+                <div class="image-item">
+                    <img src="./Images/ca2f7832b951d3dd04ad5fcbba7a1a18.png" alt="Delicious food 4">
+                    <p>Delicious Food 4</p>
                 </div>
             </div>
         </section>
@@ -183,7 +191,104 @@
                             </div>
                             </div>
                            
-                        </div> <div class="colx grid_col_4 gray">
+                        </div> 
+                        <div class="colx grid_col_4 gray">
+                          <div class="upper-class">
+                            <img src="./Images/pexels-robinstickel-70497.jpg" alt="">
+                          </div>
+                          <div class="flex-container">
+                            <div>
+                                <h3 class="h2-hand">Handpicked Hotel</h3>
+                                <h2 class="btn">Add to cart</h2>
+                            </div>
+                            <div>
+                                <h2 class="small-tag"><i class="fa-solid fa-star" style="color: #f2875a;"></i> 4.9</h2>
+                                <h2>$15</h2>
+                            </div>
+                            </div>
+                           
+                        </div>
+                        <div class="colx grid_col_4 gray hidden">
+                          <div class="upper-class">
+                            <img src="./Images/pexels-xmtnguyen-699953.jpg" alt="">
+                          </div>
+                          <div class="flex-container">
+                            <div>
+                                <h3 class="h2-hand">Handpicked Hotel</h3>
+                                <h2 class="btn">Add to cart</h2>
+                            </div>
+                            <div>
+                                <h2 class="small-tag"><i class="fa-solid fa-star" style="color: #f2875a;"></i> 4.9</h2>
+                                <h2>$15</h2>
+                            </div>
+                            </div>
+                           
+                        </div>
+                        <div class="colx grid_col_4 gray hidden">
+                          <div class="upper-class">
+                            <img src="./Images/2960bf175397022922e830ec3e1d9301.png" alt="">
+                          </div>
+                          <div class="flex-container">
+                            <div>
+                                <h3 class="h2-hand">Handpicked Hotel</h3>
+                                <h2 class="btn">Add to cart</h2>
+                            </div>
+                            <div>
+                                <h2 class="small-tag"><i class="fa-solid fa-star" style="color: #f2875a;"></i> 4.9</h2>
+                                <h2>$15</h2>
+                            </div>
+                            </div>
+                           
+                        </div>
+                        <div class="colx grid_col_4 gray hidden">
+                          <div class="upper-class">
+                            <img src="./Images/4781e98e8fe30f5e079a9a24ac667e6a.png" alt="">
+                          </div>
+                          <div class="flex-container">
+                            <div>
+                                <h3 class="h2-hand">Handpicked Hotel</h3>
+                                <h2 class="btn">Add to cart</h2>
+                            </div>
+                            <div>
+                                <h2 class="small-tag"><i class="fa-solid fa-star" style="color: #f2875a;"></i> 4.9</h2>
+                                <h2>$15</h2>
+                            </div>
+                            </div>
+                           
+                        </div>
+                        <div class="colx grid_col_4 gray hidden">
+                          <div class="upper-class">
+                            <img src="./Images/7c550720ab20af0840548a832e0f9a28.png" alt="">
+                          </div>
+                          <div class="flex-container">
+                            <div>
+                                <h3 class="h2-hand">Handpicked Hotel</h3>
+                                <h2 class="btn">Add to cart</h2>
+                            </div>
+                            <div>
+                                <h2 class="small-tag"><i class="fa-solid fa-star" style="color: #f2875a;"></i> 4.9</h2>
+                                <h2>$15</h2>
+                            </div>
+                            </div>
+                           
+                        </div>
+                        <div class="colx grid_col_4 gray hidden">
+                          <div class="upper-class">
+                            <img src="./Images/ca2f7832b951d3dd04ad5fcbba7a1a18.png" alt="">
+                          </div>
+                          <div class="flex-container">
+                            <div>
+                                <h3 class="h2-hand">Handpicked Hotel</h3>
+                                <h2 class="btn">Add to cart</h2>
+                            </div>
+                            <div>
+                                <h2 class="small-tag"><i class="fa-solid fa-star" style="color: #f2875a;"></i> 4.9</h2>
+                                <h2>$15</h2>
+                            </div>
+                            </div>
+                           
+                        </div>
+                        <div class="colx grid_col_4 gray hidden">
                           <div class="upper-class">
                             <img src="./Images/pexels-robinstickel-70497.jpg" alt="">
                           </div>
@@ -202,7 +307,7 @@
                      
                     </div>
                     </div>
-            
+                    <button style="text-align: center; background-color: #ff540a; color: white; font-weight: bold; padding: 10px 40px; border-radius: 20px; margin: 20px 20px 20px 20px; border: none;" id="toggle-btn">See all</button>
         </section>
         <!-- choose end-->
 
@@ -396,6 +501,28 @@
     document.getElementById("successMessage").style.display = "block";
 });
 
+
+document.getElementById('toggle-btn').addEventListener('click', function() {
+        var hiddenCards = document.querySelectorAll('.grid .hidden');
+        var isShowingAll = hiddenCards.length === 0; // Check if all cards are currently visible
+
+        if (isShowingAll) {
+            // Hide some cards and change button text to "See all"
+            var cardsToHide = document.querySelectorAll('.grid .colx');
+            cardsToHide.forEach(function(card, index) {
+                if (index >= 6) { // Show the first 6 items and hide the rest
+                    card.classList.add('hidden');
+                }
+            });
+            this.textContent = 'See all';
+        } else {
+            // Show all cards and change button text to "Show less"
+            hiddenCards.forEach(function(card) {
+                card.classList.remove('hidden');
+            });
+            this.textContent = 'Show less';
+        }
+    });
 
     </script>
 </body>
