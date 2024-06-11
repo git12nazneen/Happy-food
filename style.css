@@ -152,7 +152,15 @@ line-height: normal;
     gap: 25px;
 }
 .banner-p1{
-    color: rgba(19, 19, 24, 0.70);
+    color: black;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: 26px;
+padding-top: 15px;
+}
+.banner-p11{
+    color: white;
 font-size: 1rem;
 font-style: normal;
 font-weight: 400;
@@ -250,7 +258,7 @@ line-height: normal;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #FFF;
+    color: black;
     font-weight: 1000;
 }
 
@@ -346,21 +354,33 @@ border-radius: 30px;
     padding-bottom: 20px;
 }
 .chid-news{
-    border-radius: 10px;
-    border: 1px solid orangered;
+    
+   
     padding: 60px 40px;
 }
 .news-main{
     display: flex;
-    justify-content: space-between;
-    
+    justify-content: space-around;
+    background-color: #0a0707;
+    border-radius: 30px;
+    gap: 40px;
+    margin: 40px 0;
+    padding: 30px 30px;
 }
 .h3{
-    color: #131318;
+    color: black;
 font-size: 24px;
 font-style: normal;
 font-weight: 800;
 line-height: normal;
+}
+.h33{
+    color: white;
+font-size: 24px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+padding-top: 50px;
 }
 input{
     display: block;
@@ -380,10 +400,13 @@ input{
     border: none;
 }
 .news-img img{
-  height: auto;
+  height: 300px;
     width: 100%;
+    margin: auto;
+    /* height: auto; */
 
 }
+
 
 .over{
     position: relative;
@@ -623,4 +646,20 @@ padding-top: 100px;
     color: #FF5400;
     font-size: 20px;
     border-radius: 50%;
+}
+
+/*  */
+.main-div{
+    background-color: white;
+    padding: 5px 10px;
+    margin-top: 20px;
+}
+
+.main-div form {
+    display: flex;
+    align-items: center;
+}
+
+.main-div input[type="email"] {
+    margin-right: 10px; /* Adjust as needed */
 }

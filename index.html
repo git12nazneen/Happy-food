@@ -280,102 +280,33 @@
 
      
 
-        <!-- blog end -->
-
- <!-- gallery start -->
- <!-- <section id="gallery">
-    <div class="container">
-        <div class="gallery-head">
-            <h2 class="h2-tag">Choose your destination</h2>
-            <p class="banner-p2 center">Are you looking for a specific type of destination, like a beach, historical city, nature retreat, or something else? Choose our travel countries.</p>
-        </div>
-            <div class="gallery-main">
-                <div class="gallery-item">
-                    <div class="img1">
-                        <img src="./Images/Rectangle 5.png" alt="">
-                        <div class="up-h3">
-                         <h1>Maldives</h1> 
-                        </div>
-                    </div>
-                    <div class="img1">
-                        <img src="./Images/Rectangle 8.png" alt="">
-                        <div class="up-h3">
-                           <h1>Indonesia</h1>
-                        </div>
-                    </div>
-                   
-                </div>
-                <div class="gallery-item2" id="decrease-gap">
-                    <div class="img1">
-                        <img class="img3" src="./Images/Rectangle 6.png" alt="">
-                        <div class="up-h3">
-                           <h3>Srilanka</h3> 
-                        </div>
-                    </div>
-                    <div class="img1">
-                        <img class="img4" src="./Images/Rectangle 7.png" alt="">
-                        <div class="up-h3">
-                           <h3>North America</h3> 
-                        </div>
-                    </div>
-                    <div class="img1">
-                        <img class="img5" src="./Images/Rectangle 9.png" alt="">
-                        <div class="up-h3">
-                           <h1>Kashmir</h1>
-                        </div>
-                    </div>
-                   
-                </div>
-                <div class="gallery-item3" >
-                    <div class="img1">
-                        <img src="./Images/Rectangle 11.png" alt="">
-                        <div class="up-h3">
-                           <h1>Bangladesh</h1>
-                        </div>
-                    </div>
-                    <div class="img1">
-                        <img class="img6" src="./Images/Rectangle 10.png" alt="">
-                        <div class="up-h3">
-                           <h1>Bandorban</h1>
-                        </div>
-                    </div>
-                   
-                     id="gap-img" -->
-                    
-                <!-- </div>
-            </div>    
-    </div>
-</section>  --> 
-<!-- gallery end -->
-
-
-
-
-        <!-- newslatter start -->
-        <section id="newslatter">
+        <!-- blog end --> 
+        <section id="newsletter">
             <div class="container">
                 <div class="news-main">
                     <div class="news-info">
-                        <div class="chid-news">
-                            <h3 class="h3">Newsletter</h3>
-                        <p class="banner-p1">Feel free to share your infomation.Sign up today .</p>
-                        <form>
-                            <input type="text" name=""placeholder="Enter your name" id=""> <br>
-                            <input type="email" name="" placeholder="Enter your email" id="" required> <br>
-                            <button class="btn-primary1">Subscribe </button>
-                        </form>
+                        <div class="child-news">
+                            <h3 class="h33">Subscribe To Our Newsletter</h3>
+                            <p class="banner-p11">Classic Italian dessert with layers of mascarpone cheese, espresso-soaked ladyfingers, and a dusting of cocoa powder.</p>
+                            <div class="main-div">
+                                <form id="subscribeForm">
+                                    <input type="email" style="background-color: white;" name="email" placeholder="Enter your email" id="email" required>
+                                    <button type="submit" class="btn-primary1">Subscribe</button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                     <div class="news-img">
-                        <img src="./Images/Rectangle 8 (1).png" alt="">
-                        <div class="over">
-                            <p >Family.com</p>
-                            <h3 >Save up to 70%</h3>
-                        </div>
+                        <img src="./Images/7c550720ab20af0840548a832e0f9a28.png" alt="">
                     </div>
                 </div>
             </div>
         </section>
+        <div id="successMessage" style="display: none; text-align: center ; font-weight: bolder; color: #ff540a; padding-bottom: 30px;">
+            Subscription successful! Thank you for subscribing.
+        </div>
+        
+
     </main>
     <footer id="footer">
         <div class="container">
@@ -429,6 +360,16 @@
                 card.style.opacity = '1';
             }, 500);
         }
+
+
+        document.getElementById("subscribeForm").addEventListener("submit", function(event) {
+             event.preventDefault();     
+
+    // Show success message
+    document.getElementById("successMessage").style.display = "block";
+});
+
+
     </script>
 </body>
 </html>
